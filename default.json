@@ -6,6 +6,7 @@
     ":automergeLinters",
     ":automergeRequireAllStatusChecks",
     "schedule:automergeNonOfficeHours"],
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
