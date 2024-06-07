@@ -14,7 +14,11 @@
       "groupName": "devDependencies (non-major)"
     },
     {
-      "matchPackagePatterns": ["eslint"],
+      "matchPackagePatterns": ["^@graasp/"],
+      "groupName": "Graasp packages"
+    },
+    {
+      "matchPackagePatterns": ["*eslint*"],
       "groupName": "eslint packages"
     },
     {
