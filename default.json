@@ -18,7 +18,7 @@
       "groupName": "Graasp packages"
     },
     {
-      "matchPackagePatterns": ["*eslint*"],
+      "matchPackagePatterns": ["eslint"],
       "groupName": "eslint packages"
     },
     {
