@@ -18,10 +18,6 @@
       "groupName": "Graasp packages"
     },
     {
-      "matchPackagePatterns": ["eslint"],
-      "groupName": "eslint packages"
-    },
-    {
       "matchPackagePatterns": ["^@sentry"],
       "groupName": "sentry packages"
     },
