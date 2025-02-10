@@ -4,7 +4,6 @@
     "config:base",
     ":automergePatch",
     ":automergeLinters",
-    "group:monorepo",
     ":automergeRequireAllStatusChecks",
     "schedule:monthly",
     "schedule:automergeNonOfficeHours"],
