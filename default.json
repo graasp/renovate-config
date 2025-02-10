@@ -4,14 +4,17 @@
     "config:base",
     ":automergePatch",
     ":automergeLinters",
+    "group:monorepo",
     ":automergeRequireAllStatusChecks",
+    "schedule:monthly",
     "schedule:automergeNonOfficeHours"],
   "labels": ["dependencies"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "devDependencies (non-major)"
+      "groupName": "devDependencies (non-major)",
+      "schedule": "* * 1 * *"
     },
     {
       "matchPackagePatterns": ["^@graasp/"],
@@ -19,29 +22,14 @@
     },
     {
       "matchPackagePatterns": ["^@sentry"],
-      "groupName": "sentry packages"
-    },
-    {
-      "matchPackagePatterns": ["^@commitlint/"],
-      "groupName": "commitlint packages"
-    },
-    {
-      "matchPackagePatterns": ["lodash"],
-      "groupName": "lodash packages"
-    },
-    {
-      "matchPackagePatterns": ["^@codemirror"],
-      "groupName": "codemirror packages"
-    },
-    {
-      "matchPackagePatterns": ["^@uppy/"],
-      "groupName": "uppy packages"
+      "groupName": "sentry packages",
+      "schedule": "* * 1 * *"
     },
     {
       "matchPackagePatterns": ["mui"],
       "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "mui (non-major)"
+      "groupName": "mui (non-major)",
+      "schedule": "* * 1 * *"
     }
   ]
 }
-  
